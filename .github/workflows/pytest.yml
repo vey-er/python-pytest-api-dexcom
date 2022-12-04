@@ -25,7 +25,7 @@ jobs:
 
     - name: Test with pytest
       run: |
-        pytest Tests --junitxml="result.xml"
+        pytest
         
     - uses: actions/upload-artifact@v2
       if: ${{ always() }}
