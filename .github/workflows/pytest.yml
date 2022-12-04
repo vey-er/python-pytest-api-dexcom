@@ -39,8 +39,8 @@ jobs:
         name: test-artifacts
         path: |
           Reports/report.html
-          Logs/pytest.
-          !Tests/api_performance/report/*.csv
+          Logs/pytest.log
+          Tests/api_performance/report/report_stats.csv
 
 
 #  report:

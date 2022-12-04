@@ -11,6 +11,7 @@ python-json-logger = "*"
 locust = "*"
 pyyaml = "*"
 pytz = "*"
+pytest-xdist = "*"
 
 [dev-packages]
 
