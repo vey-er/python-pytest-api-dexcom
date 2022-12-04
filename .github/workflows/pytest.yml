@@ -27,10 +27,10 @@ jobs:
 
     - name: Test with pytest
       run: |
-        pipenv run pytest
+        pipenv run python -m pytest
         
     - uses: actions/upload-artifact@v3
       if: ${{ always() }}
       with:
         name: test-artifacts
-        path: result.xml    
+        path: Reports/report.html

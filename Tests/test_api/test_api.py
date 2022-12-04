@@ -1,12 +1,11 @@
-import requests
 import json
-import jsonpath
-import pytest
-from pathlib import Path
-from pytest import mark
-from Utilites.customlogger import LogGen
-from Utilites.json_logger import CustomJsonFormatter
 import logging
+from pathlib import Path
+
+import requests
+from pytest import mark
+
+from Utilites.json_logger import CustomJsonFormatter
 
 DEFAULT_LOGLEVEL = "INFO"
 # Configure Logging

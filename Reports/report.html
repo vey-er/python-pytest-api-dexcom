@@ -439,9 +439,9 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
 }
 </script>
     <h1>API Testing Report</h1>
-    <p>Report generated on 04-Dec-2022 at 02:30:59 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.2.0</p>
+    <p>Report generated on 04-Dec-2022 at 16:12:20 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.2.0</p>
     <h2>Summary</h2>
-    <p>3 tests ran in 1.23 seconds. </p>
+    <p>3 tests ran in 1.06 seconds. </p>
     <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">0 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">3 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
     <h2>Results</h2>
     <table id="results-table">
@@ -457,18 +457,18 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
         <tr>
           <td class="col-result">Failed</td>
           <td class="col-name">Tests/test_api/test_api.py::test_all_api[https://api.dexcom.com-/info--]</td>
-          <td class="col-duration">0.16</td>
+          <td class="col-duration">0.18</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log"><span class="error">E   AssertionError: assert &#x27;insulin-service&#x27; in [&#x27;api-gateway&#x27;, &#x27;standard-offering&#x27;]</span><br/> ------------------------------Captured stderr call------------------------------ <br/>{&quot;message&quot;: &quot;Parametrize test started&quot;, &quot;base_url&quot;: &quot;https://api.dexcom.com&quot;, &quot;end_point&quot;: &quot;/info&quot;, &quot;timestamp&quot;: &quot;2022-12-04T08:30:58.923602+00:00&quot;, &quot;level&quot;: &quot;INFO&quot;}
-{&quot;message&quot;: &quot;Starting new HTTPS connection (1): api.dexcom.com:443&quot;, &quot;timestamp&quot;: &quot;2022-12-04T08:30:58.942591+00:00&quot;, &quot;level&quot;: &quot;DEBUG&quot;}
-{&quot;message&quot;: &quot;https://api.dexcom.com:443 \&quot;GET /info HTTP/1.1\&quot; 200 None&quot;, &quot;timestamp&quot;: &quot;2022-12-04T08:30:59.088213+00:00&quot;, &quot;level&quot;: &quot;DEBUG&quot;}
-{&quot;message&quot;: &quot;test failed extra={&#x27;base_url&#x27;: &#x27;https://api.dexcom.com&#x27;, &#x27;end_point&#x27;: &#x27;/info&#x27;, &#x27;error&#x27;: (\&quot;assert &#x27;insulin-service&#x27; in [&#x27;api-gateway&#x27;, &#x27;standard-offering&#x27;]\&quot;,)}&quot;, &quot;timestamp&quot;: &quot;2022-12-04T08:30:59.090664+00:00&quot;, &quot;level&quot;: &quot;ERROR&quot;}
-<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     root:test_api.py:53 Parametrize test started
+            <div class="log"><span class="error">E   AssertionError: assert &#x27;insulin-service&#x27; in [&#x27;api-gateway&#x27;, &#x27;standard-offering&#x27;]</span><br/> ------------------------------Captured stderr call------------------------------ <br/>{&quot;message&quot;: &quot;Parametrize test started&quot;, &quot;base_url&quot;: &quot;https://api.dexcom.com&quot;, &quot;end_point&quot;: &quot;/info&quot;, &quot;timestamp&quot;: &quot;2022-12-04T22:12:20.504205+00:00&quot;, &quot;level&quot;: &quot;INFO&quot;}
+{&quot;message&quot;: &quot;Starting new HTTPS connection (1): api.dexcom.com:443&quot;, &quot;timestamp&quot;: &quot;2022-12-04T22:12:20.519065+00:00&quot;, &quot;level&quot;: &quot;DEBUG&quot;}
+{&quot;message&quot;: &quot;https://api.dexcom.com:443 \&quot;GET /info HTTP/1.1\&quot; 200 None&quot;, &quot;timestamp&quot;: &quot;2022-12-04T22:12:20.683216+00:00&quot;, &quot;level&quot;: &quot;DEBUG&quot;}
+{&quot;message&quot;: &quot;test failed extra={&#x27;base_url&#x27;: &#x27;https://api.dexcom.com&#x27;, &#x27;end_point&#x27;: &#x27;/info&#x27;, &#x27;error&#x27;: (\&quot;assert &#x27;insulin-service&#x27; in [&#x27;api-gateway&#x27;, &#x27;standard-offering&#x27;]\&quot;,)}&quot;, &quot;timestamp&quot;: &quot;2022-12-04T22:12:20.686221+00:00&quot;, &quot;level&quot;: &quot;ERROR&quot;}
+<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     root:test_api.py:52 Parametrize test started
 DEBUG    urllib3.connectionpool:connectionpool.py:1003 Starting new HTTPS connection (1): api.dexcom.com:443
 DEBUG    urllib3.connectionpool:connectionpool.py:456 https://api.dexcom.com:443 &quot;GET /info HTTP/1.1&quot; 200 None
-ERROR    root:test_api.py:94 test failed extra={&#x27;base_url&#x27;: &#x27;https://api.dexcom.com&#x27;, &#x27;end_point&#x27;: &#x27;/info&#x27;, &#x27;error&#x27;: (&quot;assert &#x27;insulin-service&#x27; in [&#x27;api-gateway&#x27;, &#x27;standard-offering&#x27;]&quot;,)}<br/></div></td></tr></tbody>
+ERROR    root:test_api.py:93 test failed extra={&#x27;base_url&#x27;: &#x27;https://api.dexcom.com&#x27;, &#x27;end_point&#x27;: &#x27;/info&#x27;, &#x27;error&#x27;: (&quot;assert &#x27;insulin-service&#x27; in [&#x27;api-gateway&#x27;, &#x27;standard-offering&#x27;]&quot;,)}<br/></div></td></tr></tbody>
       <tbody class="failed results-table-row">
         <tr>
           <td class="col-result">Failed</td>
@@ -477,21 +477,21 @@ ERROR    root:test_api.py:94 test failed extra={&#x27;base_url&#x27;: &#x27;http
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log"><span class="error">E   socket.gaierror: [Errno 8] nodename nor servname provided, or not known</span><br/><br/>During handling of the above exception, another exception occurred:<br/><span class="error">E   urllib3.exceptions.NewConnectionError: &lt;urllib3.connection.HTTPSConnection object at 0x1120faa60&gt;: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known</span><br/><br/>During handling of the above exception, another exception occurred:<br/><span class="error">E   urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host=&#x27;sandboxapi.dexcom.com&#x27;, port=443): Max retries exceeded with url: /info (Caused by NewConnectionError(&#x27;&lt;urllib3.connection.HTTPSConnection object at 0x1120faa60&gt;: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known&#x27;))</span><br/><br/>During handling of the above exception, another exception occurred:<br/><span class="error">E   requests.exceptions.ConnectionError: HTTPSConnectionPool(host=&#x27;sandboxapi.dexcom.com&#x27;, port=443): Max retries exceeded with url: /info (Caused by NewConnectionError(&#x27;&lt;urllib3.connection.HTTPSConnection object at 0x1120faa60&gt;: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known&#x27;))</span><br/> ------------------------------Captured stderr call------------------------------ <br/>{&quot;message&quot;: &quot;Parametrize test started&quot;, &quot;base_url&quot;: &quot;https://sandboxapi.dexcom.com&quot;, &quot;end_point&quot;: &quot;/info&quot;, &quot;timestamp&quot;: &quot;2022-12-04T08:30:59.093832+00:00&quot;, &quot;level&quot;: &quot;INFO&quot;}
-{&quot;message&quot;: &quot;Starting new HTTPS connection (1): sandboxapi.dexcom.com:443&quot;, &quot;timestamp&quot;: &quot;2022-12-04T08:30:59.095867+00:00&quot;, &quot;level&quot;: &quot;DEBUG&quot;}
-<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     root:test_api.py:53 Parametrize test started
+            <div class="log"><span class="error">E   socket.gaierror: [Errno 8] nodename nor servname provided, or not known</span><br/><br/>During handling of the above exception, another exception occurred:<br/><span class="error">E   urllib3.exceptions.NewConnectionError: &lt;urllib3.connection.HTTPSConnection object at 0x105ecbb50&gt;: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known</span><br/><br/>During handling of the above exception, another exception occurred:<br/><span class="error">E   urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host=&#x27;sandboxapi.dexcom.com&#x27;, port=443): Max retries exceeded with url: /info (Caused by NewConnectionError(&#x27;&lt;urllib3.connection.HTTPSConnection object at 0x105ecbb50&gt;: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known&#x27;))</span><br/><br/>During handling of the above exception, another exception occurred:<br/><span class="error">E   requests.exceptions.ConnectionError: HTTPSConnectionPool(host=&#x27;sandboxapi.dexcom.com&#x27;, port=443): Max retries exceeded with url: /info (Caused by NewConnectionError(&#x27;&lt;urllib3.connection.HTTPSConnection object at 0x105ecbb50&gt;: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known&#x27;))</span><br/> ------------------------------Captured stderr call------------------------------ <br/>{&quot;message&quot;: &quot;Parametrize test started&quot;, &quot;base_url&quot;: &quot;https://sandboxapi.dexcom.com&quot;, &quot;end_point&quot;: &quot;/info&quot;, &quot;timestamp&quot;: &quot;2022-12-04T22:12:20.689487+00:00&quot;, &quot;level&quot;: &quot;INFO&quot;}
+{&quot;message&quot;: &quot;Starting new HTTPS connection (1): sandboxapi.dexcom.com:443&quot;, &quot;timestamp&quot;: &quot;2022-12-04T22:12:20.693278+00:00&quot;, &quot;level&quot;: &quot;DEBUG&quot;}
+<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     root:test_api.py:52 Parametrize test started
 DEBUG    urllib3.connectionpool:connectionpool.py:1003 Starting new HTTPS connection (1): sandboxapi.dexcom.com:443<br/></div></td></tr></tbody>
       <tbody class="failed results-table-row">
         <tr>
           <td class="col-result">Failed</td>
           <td class="col-name">Tests/test_api/test_api.py::test_api</td>
-          <td class="col-duration">0.26</td>
+          <td class="col-duration">0.17</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log"><span class="error">E   AssertionError: assert &#x27;insulin-service&#x27; in [&#x27;api-gateway&#x27;, &#x27;standard-offering&#x27;]</span><br/> ------------------------------Captured stderr call------------------------------ <br/>{&quot;message&quot;: &quot;Api test started&quot;, &quot;base_url&quot;: &quot;https://api.dexcom.com&quot;, &quot;end_point&quot;: &quot;/info&quot;, &quot;timestamp&quot;: &quot;2022-12-04T08:30:59.114381+00:00&quot;, &quot;level&quot;: &quot;INFO&quot;}
-{&quot;message&quot;: &quot;Starting new HTTPS connection (1): api.dexcom.com:443&quot;, &quot;timestamp&quot;: &quot;2022-12-04T08:30:59.116067+00:00&quot;, &quot;level&quot;: &quot;DEBUG&quot;}
-{&quot;message&quot;: &quot;https://api.dexcom.com:443 \&quot;GET /info HTTP/1.1\&quot; 200 None&quot;, &quot;timestamp&quot;: &quot;2022-12-04T08:30:59.377283+00:00&quot;, &quot;level&quot;: &quot;DEBUG&quot;}
-<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     root:test_api.py:118 Api test started
+            <div class="log"><span class="error">E   AssertionError: assert &#x27;insulin-service&#x27; in [&#x27;api-gateway&#x27;, &#x27;standard-offering&#x27;]</span><br/> ------------------------------Captured stderr call------------------------------ <br/>{&quot;message&quot;: &quot;Api test started&quot;, &quot;base_url&quot;: &quot;https://api.dexcom.com&quot;, &quot;end_point&quot;: &quot;/info&quot;, &quot;timestamp&quot;: &quot;2022-12-04T22:12:20.702888+00:00&quot;, &quot;level&quot;: &quot;INFO&quot;}
+{&quot;message&quot;: &quot;Starting new HTTPS connection (1): api.dexcom.com:443&quot;, &quot;timestamp&quot;: &quot;2022-12-04T22:12:20.705717+00:00&quot;, &quot;level&quot;: &quot;DEBUG&quot;}
+{&quot;message&quot;: &quot;https://api.dexcom.com:443 \&quot;GET /info HTTP/1.1\&quot; 200 None&quot;, &quot;timestamp&quot;: &quot;2022-12-04T22:12:20.878133+00:00&quot;, &quot;level&quot;: &quot;DEBUG&quot;}
+<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     root:test_api.py:117 Api test started
 DEBUG    urllib3.connectionpool:connectionpool.py:1003 Starting new HTTPS connection (1): api.dexcom.com:443
 DEBUG    urllib3.connectionpool:connectionpool.py:456 https://api.dexcom.com:443 &quot;GET /info HTTP/1.1&quot; 200 None<br/></div></td></tr></tbody></table></body></html>

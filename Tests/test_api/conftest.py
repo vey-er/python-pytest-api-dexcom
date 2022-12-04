@@ -1,11 +1,9 @@
+import configparser
 import json
-import os
-
 from datetime import datetime
 from pathlib import Path
+
 import pytest
-import configparser
-from pathlib import Path
 
 CONFIG_DATA_DIR = f'{Path(__file__).parent.parent.parent.resolve()}/Configurations/'
 config = configparser.RawConfigParser()

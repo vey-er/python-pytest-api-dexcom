@@ -18,7 +18,3 @@ class ReadConfig():
     @staticmethod
     def api_params():
         return config.get('common', 'params')
-
-
-if __name__ == '__main__':
-    print(ReadConfig().api_base_url())

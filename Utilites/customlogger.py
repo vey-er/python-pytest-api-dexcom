@@ -1,13 +1,5 @@
 import logging
 
-from datetime import datetime
-import logging
-
-from pythonjsonlogger import jsonlogger
-import pytz
-
-import logging
-
 class LogGen:
     @staticmethod
     def loggen():

@@ -1,11 +1,8 @@
 import logging
 
-
 from locust import HttpUser, SequentialTaskSet, constant, events, tag, task
-from pythonjsonlogger import jsonlogger
 
 from Utilites.json_logger import CustomJsonFormatter
-import logging
 
 DEFAULT_LOGLEVEL = "INFO"
 

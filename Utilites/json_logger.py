@@ -1,11 +1,11 @@
 """
 Miscellaneous utilities
 """
-from datetime import datetime
 import logging
+from datetime import datetime
 
-from pythonjsonlogger import jsonlogger
 import pytz
+from pythonjsonlogger import jsonlogger
 
 LOGGER = logging.getLogger()
 
