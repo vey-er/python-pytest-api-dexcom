@@ -8,8 +8,6 @@
 
 ## Getting started
 
-* To download and install `pytest`, run this command from the terminal : `pipenv install pytest`
-* To download and install `requests`, run this command from the terminal : `pipenv install requests`
 * All the dependencies are in pipfile and when you clone the project, 
   * pip install pipenv
   * pipenv install
