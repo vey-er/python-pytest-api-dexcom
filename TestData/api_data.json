@@ -1,0 +1,14 @@
+[
+  {
+    "baseurl": "https://api.dexcom.com",
+    "endpoint": "/info",
+    "params": "",
+    "headers": ""
+  },
+  {
+    "baseurl": "https://sandboxapi.dexcom.com",
+    "endpoint": "/info",
+    "params": "",
+    "headers": ""
+  }
+]
