@@ -20,7 +20,7 @@ def pytest_html_report_title(report):
 @pytest.hookimpl(tryfirst=True)
 def pytest_configure(config):
     # to remove environment section
-    config._metadata = None
+    # config._metadata = None
     # set custom options only if none are provided from command line
     if not config.option.htmlpath:
         config.option.htmlpath = f'{ROOT}reports/' + datetime.now().strftime("%d-%m-%Y %H-%M-%S") + ".html"

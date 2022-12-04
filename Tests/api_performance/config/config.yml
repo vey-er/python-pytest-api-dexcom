@@ -2,7 +2,7 @@ csv: Tests/api_performance/report/report
 headless: true
 host: https://api.dexcom.com/info
 locustfile: Tests/api_performance/performance_test.py
-run-time: 100s
-spawn-rate: 100
+run-time: 5s
+spawn-rate: 10
 tag: get
-users: 1000
+users: 10

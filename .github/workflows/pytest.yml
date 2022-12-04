@@ -25,28 +25,35 @@ jobs:
         pip install pipenv
         pipenv install
 
-    - name: Test with pytest
+    - name: Test  API with pytest
       run: |
         pipenv run python -m pytest
+
+    - name: Test Performance of API with pytest and locust
+      run: |
+        pipenv run python Tests/api_performance/runner.py
         
-    - uses: actions/upload-artifact@v2
+    - uses: actions/upload-artifact@v3
       if: ${{ always() }}
       with:
         name: test-artifacts
-        path: Reports/report.html
+        path: |
+          Reports/report.html
+          Logs/pytest.
+          !Tests/api_performance/report/*.csv
 
 
-  report:
-    if: ${{ always() }}
-    needs: [ build ]
-    name: Add 3 and 7
-    runs-on: ubuntu-latest
-    steps:
-      - shell: bash
-        run: |
-          expr 3 + 7 > math-homework.txt
-      - name: Upload math result for job 1
-        uses: actions/upload-artifact@v3
-        with:
-          name: homework
-          path: math-homework.txt
+#  report:
+#    if: ${{ always() }}
+#    needs: [ build ]
+#    name: Add 3 and 7
+#    runs-on: ubuntu-latest
+#    steps:
+#      - shell: bash
+#        run: |
+#          expr 3 + 7 > math-homework.txt
+#      - name: Upload math result for job 1
+#        uses: actions/upload-artifact@v3
+#        with:
+#          name: homework
+#          path: math-homework.txt
